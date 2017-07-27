@@ -111,6 +111,8 @@ fileprivate class ShutterButtonView: UIView {
     }
     
     fileprivate func initialize() {
+        isUserInteractionEnabled = false
+        
         layer.addSublayer(bezelLayer)
         layer.addSublayer(knobLayer)
     }

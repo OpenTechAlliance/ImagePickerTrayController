@@ -61,12 +61,19 @@ class ViewController: UIViewController {
     
     fileprivate func showImagePickerTray() {
         let controller = ImagePickerTrayController()
-        controller.add(action: .cameraAction { _ in
-            print("Show Camera")
+        
+        controller.add(action: .photoAction { _ in
+            print("Show Photo")
         })
+        
+        controller.add(action: .videoAction { _ in
+            print("Show Video")
+        })
+        
         controller.add(action: .libraryAction { _ in
             print("Show Library")
         })
+        
         present(controller, animated: true, completion: nil)
     }
     

@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-fileprivate let itemSpacing: CGFloat = 1
+fileprivate let itemSpacing: CGFloat = 0
 
 /// The media type an instance of ImagePickerSheetController can display
 public enum ImagePickerMediaType {
@@ -50,9 +50,9 @@ public class ImagePickerTrayController: UIViewController {
         layout.minimumLineSpacing = itemSpacing
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.contentInset = UIEdgeInsets(top: 1, left: 0, bottom: 2, right: 1)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = UIColor(red: 209.0/255.0, green: 213.0/255.0, blue: 218.0/255.0, alpha: 1.0)
+        collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = false
@@ -103,7 +103,7 @@ public class ImagePickerTrayController: UIViewController {
     fileprivate var imageSize: CGSize = .zero
     let trayHeight: CGFloat
 
-    fileprivate let actionCellWidth: CGFloat = 162
+    fileprivate let actionCellWidth: CGFloat = 60
     fileprivate weak var actionCell: ActionCell?
 
     public fileprivate(set) var actions = [ImagePickerAction]()
@@ -169,13 +169,6 @@ public class ImagePickerTrayController: UIViewController {
         
         fetchAssets()
     }
-
-    public override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-        collectionView.setContentOffset(CGPoint(x: actionCellWidth - spacing.x, y: 0), animated: false)
-        reloadActionCellDisclosureProgress()
-    }
     
     // MARK: - Action
     
@@ -240,12 +233,6 @@ public class ImagePickerTrayController: UIViewController {
     
     // MARK: -
     
-    fileprivate func reloadActionCellDisclosureProgress() {
-        if sections[0] > 0 {
-            actionCell?.disclosureProcess = (collectionView.contentOffset.x / (actionCellWidth/2))
-        }
-    }
-    
     fileprivate func post(name: Notification.Name, frame: CGRect, duration: TimeInterval?) {
         var userInfo: [AnyHashable: Any] = [ImagePickerTrayFrameUserInfoKey: frame]
         if let duration = duration {
@@ -275,7 +262,6 @@ extension ImagePickerTrayController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(ActionCell.self), for: indexPath) as! ActionCell
             cell.actions = actions
             actionCell = cell
-            reloadActionCellDisclosureProgress()
             
             return cell
         case 1:
@@ -328,6 +314,18 @@ extension ImagePickerTrayController: UICollectionViewDelegate {
         delegate?.controller?(self, didDeselectAsset: assets[indexPath.item])
     }
     
+    public func selectAssets(_ selectedAssets: [PHAsset]) {
+        if let selections = collectionView.indexPathsForSelectedItems {
+            for indexPath in selections {
+                collectionView.deselectItem(at: indexPath, animated: false)
+            }
+        }
+        
+        for asset in selectedAssets {
+            guard let index = assets.index(of: asset) else { continue }
+            collectionView.selectItem(at: IndexPath(row: index, section: sections.count - 1), animated: false, scrollPosition: .top)
+        }
+    }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
@@ -350,22 +348,9 @@ extension ImagePickerTrayController: UICollectionViewDelegateFlowLayout {
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        guard section == 1 else {
-            return UIEdgeInsets()
-        }
-        
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 6)
+        return UIEdgeInsets()
     }
     
-}
-
-// MARK: - UIScrollViewDelegate
-
-extension ImagePickerTrayController: UIScrollViewDelegate {
-
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        reloadActionCellDisclosureProgress()
-    }
 }
 
 // MARK: - UIImagePickerControllerDelegate

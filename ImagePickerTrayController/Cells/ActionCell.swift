@@ -16,19 +16,10 @@ class ActionCell: UICollectionViewCell {
     fileprivate let stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.distribution = .fillEqually
+        stackView.distribution = .equalSpacing
         stackView.spacing = spacing.x/2
         
         return stackView
-    }()
-
-    fileprivate let chevronImageView: UIImageView = {
-        let bundle = Bundle(for: ImagePickerTrayController.self)
-        let image = UIImage(named: "ActionCell-Chevron", in: bundle, compatibleWith: nil)
-        let imageView = UIImageView(image: image)
-        imageView.alpha = 0.5
-
-        return imageView
     }()
 
     var actions = [ImagePickerAction]() {
@@ -41,9 +32,11 @@ class ActionCell: UICollectionViewCell {
             }
         }
         didSet {
-            if stackView.arrangedSubviews.count != actions.count {
+            if stackView.arrangedSubviews.count != actions.count + 2 {
+                stackView.addArrangedSubview(UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 1)))
                 actions.map { ActionButton(action: $0, target: self, selector: #selector(callAction(sender:))) }
                        .forEach { stackView.addArrangedSubview($0) }
+                stackView.addArrangedSubview(UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 1)))
             }
         }
     }
@@ -70,7 +63,6 @@ class ActionCell: UICollectionViewCell {
     
     fileprivate func initialize() {
         contentView.addSubview(stackView)
-        contentView.addSubview(chevronImageView)
     }
     
     // MARK: - Layout
@@ -78,21 +70,14 @@ class ActionCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        let progress = max(disclosureProcess, 0)
-        stackView.frame = bounds.insetBy(dx: spacing.x, dy: spacing.y).offsetBy(dx: -progress * stackViewOffset, dy: 0)
-        
-        chevronImageView.alpha = progress/2
-        
-        let chevronOffset = (1-progress) * (spacing.x + stackViewOffset)
-        let chevronCenterX = max(bounds.maxX - spacing.x/2 + chevronOffset, stackView.frame.maxX + spacing.x/2)
-        chevronImageView.center = CGPoint(x: chevronCenterX, y: bounds.midY)
+        stackView.frame = bounds
     }
     
     // MARK: -
     
     @objc fileprivate func callAction(sender: UIButton) {
         if let index = stackView.arrangedSubviews.index(of: sender) {
-            actions[index].call()
+            actions[index-1].call()
         }
     }
 
@@ -103,21 +88,21 @@ fileprivate class ActionButton: UIButton {
     // MARK: - Initialization
     
     init(action: ImagePickerAction, target: Any, selector: Selector) {
-        super.init(frame: .zero)
+        super.init(frame: CGRect(x: 0, y: 0, width: 60, height: 45))
+        
+        addConstraint(NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 45))
         
         setTitle(action.title, for: .normal)
-        setTitleColor(.black, for: .normal)
+        setTitleColor(.lightGray, for: .normal)
         setImage(action.image.withRenderingMode(.alwaysTemplate), for: .normal)
         
-        imageView?.tintColor = .black
-        imageView?.contentMode = .bottom
+        imageView?.tintColor = .lightGray
+        imageView?.contentMode = .scaleAspectFit
         
         titleLabel?.textAlignment = .center
-        titleLabel?.font = .systemFont(ofSize: 14)
+        titleLabel?.font = .systemFont(ofSize: 13)
         
         backgroundColor = .white
-        layer.masksToBounds = true
-        layer.cornerRadius = 11.0
         addTarget(target, action: selector, for: .touchUpInside)
     }
     
