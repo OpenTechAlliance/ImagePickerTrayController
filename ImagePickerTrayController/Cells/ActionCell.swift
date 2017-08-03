@@ -93,8 +93,8 @@ fileprivate class ActionButton: UIButton {
         addConstraint(NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 45))
         
         setTitle(action.title, for: .normal)
-        setTitleColor(.lightGray, for: .normal)
-        setImage(action.image.withRenderingMode(.alwaysTemplate), for: .normal)
+        setTitleColor(UIColor(red: 46/255.0, green: 103/255.0, blue: 177/255.0, alpha: 1.0), for: .normal)
+        setImage(action.image, for: .normal)
         
         imageView?.tintColor = .lightGray
         imageView?.contentMode = .scaleAspectFit
@@ -104,20 +104,23 @@ fileprivate class ActionButton: UIButton {
         
         backgroundColor = .white
         addTarget(target, action: selector, for: .touchUpInside)
+        
+        alignVertical(spacing: 2)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Layout
-    
-    fileprivate override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
-        return contentRect.divided(atDistance: contentRect.midX, from: .minYEdge).slice
+    func alignVertical(spacing: CGFloat = 6.0) {
+        guard let imageSize = self.imageView?.image?.size, let text = self.titleLabel?.text, let font = self.titleLabel?.font else { return }
+        
+        titleEdgeInsets = UIEdgeInsets(top: 0.0, left: -imageSize.width, bottom: -(imageSize.height + spacing), right: 0.0)
+        let labelString = NSString(string: text)
+        let titleSize = labelString.size(attributes: [NSFontAttributeName: font])
+        
+        imageEdgeInsets = UIEdgeInsets(top: -(titleSize.height + spacing), left: 0.0, bottom: 0.0, right: -titleSize.width)
+        let edgeOffset = abs(titleSize.height - imageSize.height) / 2.0;
+        contentEdgeInsets = UIEdgeInsets(top: edgeOffset, left: 0.0, bottom: edgeOffset, right: 0.0)
     }
-    
-    fileprivate override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
-        return contentRect.divided(atDistance: contentRect.midX, from: .minYEdge).remainder
-    }
-    
 }

@@ -23,7 +23,7 @@ public struct ImagePickerAction {
     }
     
     public static func videoAction(with callback: @escaping Callback) -> ImagePickerAction {
-        let image = UIImage(bundledName: "ImagePickerAction-Camera")!
+        let image = UIImage(bundledName: "ImagePickerAction-Video")!
         
         return ImagePickerAction(title: NSLocalizedString("Video", comment: "Image Picker Camera Action"), image: image, callback: callback)
     }
