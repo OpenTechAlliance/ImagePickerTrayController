@@ -1,0 +1,2 @@
+dependencies: \
+  /Users/kjmacaul/ImagePickerTrayController/build/ImagePickerTrayController.build/Debug-iphonesimulator/ImagePickerTrayController.build/DerivedSources/ImagePickerTrayController_vers.c

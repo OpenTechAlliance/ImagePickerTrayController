@@ -1,0 +1,106 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So7UIImageC", ""]
+- ["So7UIImageC", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Bundle"
+- !private "ImagePickerTrayController"
+- "String"
+- "UIImage"
+depends-member:
+- !private ["So6BundleC", "init"]
+- !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "ImagePickerTrayController"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "ImagePickerTrayController"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "ImagePickerTrayController"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s9EquatableP", "Bundle"]
+- !private ["s9EquatableP", "ImagePickerTrayController"]
+- !private ["s9EquatableP", "init"]
+- !private ["s8HashableP", "Bundle"]
+- !private ["s8HashableP", "ImagePickerTrayController"]
+- !private ["s8HashableP", "init"]
+- !private ["So8NSCodingP", "Bundle"]
+- !private ["So8NSCodingP", "ImagePickerTrayController"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So21NSItemProviderReadingP", "Bundle"]
+- !private ["So21NSItemProviderReadingP", "ImagePickerTrayController"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "Bundle"]
+- !private ["So21NSItemProviderWritingP", "ImagePickerTrayController"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So8NSObjectC", "Bundle"]
+- !private ["So8NSObjectC", "ImagePickerTrayController"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "init"]
+- !private ["So16NSObjectProtocolP", "Bundle"]
+- !private ["So16NSObjectProtocolP", "ImagePickerTrayController"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So14NSSecureCodingP", "Bundle"]
+- !private ["So14NSSecureCodingP", "ImagePickerTrayController"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "Bundle"]
+- !private ["So29UIAccessibilityIdentificationP", "ImagePickerTrayController"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So7UIImageC", "Bundle"]
+- !private ["So7UIImageC", "ImagePickerTrayController"]
+- ["So7UIImageC", "String"]
+- ["So7UIImageC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "Bundle"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "ImagePickerTrayController"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "Bundle"]
+- !private ["s26_ExpressibleByImageLiteralP", "ImagePickerTrayController"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ImagePickerTrayController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+depends-nominal:
+- !private "So6BundleC"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9EquatableP"
+- !private "s8HashableP"
+- !private "So8NSCodingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So29UIAccessibilityIdentificationP"
+- "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Photos.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/ImagePickerTrayController.h"
+- "/Users/kjmacaul/ImagePickerTrayController/build/ImagePickerTrayController.build/Debug-iphoneos/ImagePickerTrayController.build/unextended-module.modulemap"
+interface-hash: "73568129b60455918bf4cc4cd5b2d1a3"

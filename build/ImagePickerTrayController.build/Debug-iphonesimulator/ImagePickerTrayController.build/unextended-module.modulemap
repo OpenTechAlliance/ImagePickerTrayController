@@ -1,0 +1,10 @@
+framework module ImagePickerTrayController {
+  umbrella header "ImagePickerTrayController.h"
+
+  export *
+  module * { export * }
+}
+
+module ImagePickerTrayController.__Swift {
+    exclude header "ImagePickerTrayController-Swift.h"
+}

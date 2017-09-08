@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/kjmacaul/Library/Developer/Xcode/DerivedData/ImagePickerTrayController-bmriybgiezurvxgnychmuhysryla/Build/Products/Debug-iphoneos/ImagePickerTrayController.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/kjmacaul/ImagePickerTrayController/build/ImagePickerTrayController.build/Debug-iphoneos/ImagePickerTrayController.build/unextended-module.modulemap',
+    }]
+  }]
+}

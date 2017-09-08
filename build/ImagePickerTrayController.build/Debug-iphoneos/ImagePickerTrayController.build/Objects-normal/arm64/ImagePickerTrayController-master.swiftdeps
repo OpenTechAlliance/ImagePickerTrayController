@@ -1,0 +1,14 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.63.10 clang-900.0.36)"
+options: "e0c87263039614130129b39be32da695"
+build_time: [1504909772, 221822000]
+inputs:
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/Cells/CameraOverlayView.swift": [1501109213, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/Cells/ActionCell.swift": [1504904714, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/Helpers/UIImageExtensions.swift": [1501013579, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/ImagePickerAction.swift": [1501794048, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/TransitionController.swift": [1504904999, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/ImagePickerTrayController.swift": [1504905057, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/Cells/CameraCell.swift": [1502993682, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/Cells/ImageCell.swift": [1501013579, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/AnimationController.swift": [1501013579, 0]
+  "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/Helpers/UIEdgeInsetsExtensions.swift": [1501013579, 0]

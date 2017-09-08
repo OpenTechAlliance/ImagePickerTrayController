@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		66C03FFB1F63511800740EC3 /* ImagePickerTrayController Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 66C03FFC1F63511800740EC3 /* Build configuration list for PBXAggregateTarget "ImagePickerTrayController Aggregate" */;
+			buildPhases = (
+				66C03FFF1F63512B00740EC3 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "ImagePickerTrayController Aggregate";
+			productName = "ImagePickerTrayController Aggregate";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4909255A1DE4E600001027EC /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490925571DE4E600001027EC /* ActionCell.swift */; };
 		4909255B1DE4E600001027EC /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490925581DE4E600001027EC /* CameraCell.swift */; };
@@ -255,6 +269,7 @@
 				4970E5841DB0E0410078ED23 /* Frameworks */,
 				4970E5851DB0E0410078ED23 /* Headers */,
 				4970E5861DB0E0410078ED23 /* Resources */,
+				66C03FFA1F634E4C00740EC3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -291,6 +306,11 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
+					66C03FFB1F63511800740EC3 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 3QED9S65XB;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 4970E5081DB0DD400078ED23 /* Build configuration list for PBXProject "ImagePickerTrayController" */;
@@ -309,6 +329,7 @@
 				4970E5871DB0E0410078ED23 /* ImagePickerTrayController */,
 				4970E5201DB0DD400078ED23 /* ImagePickerTrayControllerTests */,
 				4970E5691DB0DE110078ED23 /* Example */,
+				66C03FFB1F63511800740EC3 /* ImagePickerTrayController Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -339,6 +360,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66C03FFA1F634E4C00740EC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		66C03FFF1F63512B00740EC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4970E51D1DB0DD400078ED23 /* Sources */ = {
@@ -563,6 +613,7 @@
 		4970E5921DB0E0410078ED23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -590,6 +641,7 @@
 		4970E5931DB0E0410078ED23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -608,6 +660,24 @@
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66C03FFD1F63511800740EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QED9S65XB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		66C03FFE1F63511800740EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QED9S65XB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -646,6 +716,15 @@
 			buildConfigurations = (
 				4970E5921DB0E0410078ED23 /* Debug */,
 				4970E5931DB0E0410078ED23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C03FFC1F63511800740EC3 /* Build configuration list for PBXAggregateTarget "ImagePickerTrayController Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C03FFD1F63511800740EC3 /* Debug */,
+				66C03FFE1F63511800740EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

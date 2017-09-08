@@ -1,0 +1,580 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AnimationController"
+provides-nominal:
+- "25ImagePickerTrayController09AnimationD0C"
+- "25ImagePickerTrayController09AnimationD0C10TransitionO"
+provides-member:
+- ["25ImagePickerTrayController09AnimationD0C", ""]
+- ["25ImagePickerTrayController09AnimationD0C10TransitionO", ""]
+provides-dynamic-lookup:
+- "animateTransition"
+- "transitionDuration"
+depends-top-level:
+- !private "!"
+- !private "+="
+- !private "-"
+- "AnimationController"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "CGAffineTransform"
+- !private "CGRect"
+- !private "CastingPrecedence"
+- !private "ImagePickerTrayController"
+- "NSObject"
+- !private "StringLiteralType"
+- "TimeInterval"
+- "UIPanGestureRecognizer"
+- !private "UIView"
+- "UIViewControllerAnimatedTransitioning"
+- "UIViewControllerContextTransitioning"
+depends-member:
+- !private ["25ImagePickerTrayController09AnimationD0C", "CGAffineTransform"]
+- !private ["25ImagePickerTrayController09AnimationD0C", "CGRect"]
+- !private ["25ImagePickerTrayController09AnimationD0C", "ImagePickerTrayController"]
+- ["25ImagePickerTrayController09AnimationD0C", "TimeInterval"]
+- ["25ImagePickerTrayController09AnimationD0C", "Transition"]
+- ["25ImagePickerTrayController09AnimationD0C", "UIPanGestureRecognizer"]
+- !private ["25ImagePickerTrayController09AnimationD0C", "UIView"]
+- ["25ImagePickerTrayController09AnimationD0C", "UIViewControllerContextTransitioning"]
+- ["25ImagePickerTrayController09AnimationD0C", "animateTransition"]
+- ["25ImagePickerTrayController09AnimationD0C", "animationEnded"]
+- ["25ImagePickerTrayController09AnimationD0C", "deinit"]
+- !private ["25ImagePickerTrayController09AnimationD0C", "dismiss"]
+- ["25ImagePickerTrayController09AnimationD0C", "init"]
+- ["25ImagePickerTrayController09AnimationD0C", "interruptibleAnimator"]
+- ["25ImagePickerTrayController09AnimationD0C", "interruptibleAnimatorForTransition"]
+- !private ["25ImagePickerTrayController09AnimationD0C", "present"]
+- !private ["25ImagePickerTrayController09AnimationD0C", "transition"]
+- ["25ImagePickerTrayController09AnimationD0C", "transitionDuration"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "addGestureRecognizer"]
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "animate"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "transform"]
+- !private ["So15CALayerDelegateP", "window"]
+- !private ["SC17CGAffineTransformV", "identity"]
+- !private ["SC17CGAffineTransformV", "init"]
+- !private ["SC7CGPointV", "y"]
+- !private ["SC6CGRectV", "height"]
+- !private ["SC6CGRectV", "init"]
+- !private ["SC6CGRectV", "origin"]
+- !private ["SC6CGRectV", "width"]
+- !private ["s7CVarArgP", "CGAffineTransform"]
+- !private ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "UIView"]
+- !private ["s7CVarArgP", "addGestureRecognizer"]
+- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "animate"]
+- ["s7CVarArgP", "animateTransition"]
+- ["s7CVarArgP", "animationEnded"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "interruptibleAnimator"]
+- ["s7CVarArgP", "interruptibleAnimatorForTransition"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "transform"]
+- !private ["s7CVarArgP", "transition"]
+- ["s7CVarArgP", "transitionDuration"]
+- !private ["s7CVarArgP", "trayHeight"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "window"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "CGAffineTransform"]
+- !private ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "UIView"]
+- !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "animate"]
+- ["s28CustomDebugStringConvertibleP", "animateTransition"]
+- ["s28CustomDebugStringConvertibleP", "animationEnded"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "interruptibleAnimator"]
+- ["s28CustomDebugStringConvertibleP", "interruptibleAnimatorForTransition"]
+- !private ["s28CustomDebugStringConvertibleP", "origin"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "transform"]
+- !private ["s28CustomDebugStringConvertibleP", "transition"]
+- ["s28CustomDebugStringConvertibleP", "transitionDuration"]
+- !private ["s28CustomDebugStringConvertibleP", "trayHeight"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "origin"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s29CustomPlaygroundQuickLookableP", "y"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "origin"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "CGAffineTransform"]
+- !private ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "UIView"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "animate"]
+- ["s23CustomStringConvertibleP", "animateTransition"]
+- ["s23CustomStringConvertibleP", "animationEnded"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "interruptibleAnimator"]
+- ["s23CustomStringConvertibleP", "interruptibleAnimatorForTransition"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "transform"]
+- !private ["s23CustomStringConvertibleP", "transition"]
+- ["s23CustomStringConvertibleP", "transitionDuration"]
+- !private ["s23CustomStringConvertibleP", "trayHeight"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "window"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "height"]
+- !private ["s9DecodableP", "identity"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "origin"]
+- !private ["s9DecodableP", "width"]
+- !private ["s9DecodableP", "y"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "height"]
+- !private ["s9EncodableP", "identity"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "origin"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EncodableP", "y"]
+- !private ["s9EquatableP", "CGAffineTransform"]
+- !private ["s9EquatableP", "CGRect"]
+- !private ["s9EquatableP", "UIView"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addGestureRecognizer"]
+- !private ["s9EquatableP", "addSubview"]
+- !private ["s9EquatableP", "allowUserInteraction"]
+- !private ["s9EquatableP", "animate"]
+- ["s9EquatableP", "animateTransition"]
+- ["s9EquatableP", "animationEnded"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "frame"]
+- !private ["s9EquatableP", "from"]
+- !private ["s9EquatableP", "height"]
+- !private ["s9EquatableP", "identity"]
+- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "interruptibleAnimator"]
+- ["s9EquatableP", "interruptibleAnimatorForTransition"]
+- !private ["s9EquatableP", "origin"]
+- !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "to"]
+- !private ["s9EquatableP", "transform"]
+- !private ["s9EquatableP", "transition"]
+- ["s9EquatableP", "transitionDuration"]
+- !private ["s9EquatableP", "trayHeight"]
+- !private ["s9EquatableP", "view"]
+- !private ["s9EquatableP", "width"]
+- !private ["s9EquatableP", "window"]
+- !private ["s9EquatableP", "y"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "allowUserInteraction"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "CGAffineTransform"]
+- !private ["s8HashableP", "CGRect"]
+- !private ["s8HashableP", "UIView"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addGestureRecognizer"]
+- !private ["s8HashableP", "addSubview"]
+- !private ["s8HashableP", "animate"]
+- ["s8HashableP", "animateTransition"]
+- ["s8HashableP", "animationEnded"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "frame"]
+- !private ["s8HashableP", "from"]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", "interruptibleAnimator"]
+- ["s8HashableP", "interruptibleAnimatorForTransition"]
+- !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "to"]
+- !private ["s8HashableP", "transform"]
+- !private ["s8HashableP", "transition"]
+- ["s8HashableP", "transitionDuration"]
+- !private ["s8HashableP", "trayHeight"]
+- !private ["s8HashableP", "view"]
+- !private ["s8HashableP", "window"]
+- ["s8HashableP", ""]
+- !private ["25ImagePickerTrayControllerAAC", "trayHeight"]
+- !private ["25ImagePickerTrayControllerAAC", "view"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["So8NSCodingP", "addGestureRecognizer"]
+- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "animate"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "transform"]
+- !private ["So8NSCodingP", "trayHeight"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "window"]
+- !private ["So26NSExtensionRequestHandlingP", "trayHeight"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So8NSObjectC", "CGAffineTransform"]
+- !private ["So8NSObjectC", "CGRect"]
+- !private ["So8NSObjectC", "ImagePickerTrayController"]
+- ["So8NSObjectC", "TimeInterval"]
+- ["So8NSObjectC", "Transition"]
+- ["So8NSObjectC", "UIPanGestureRecognizer"]
+- !private ["So8NSObjectC", "UIView"]
+- ["So8NSObjectC", "UIViewControllerContextTransitioning"]
+- !private ["So8NSObjectC", "addGestureRecognizer"]
+- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "animate"]
+- ["So8NSObjectC", "animateTransition"]
+- ["So8NSObjectC", "animationEnded"]
+- !private ["So8NSObjectC", "bounds"]
+- ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "frame"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "interruptibleAnimator"]
+- ["So8NSObjectC", "interruptibleAnimatorForTransition"]
+- ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "transform"]
+- ["So8NSObjectC", "transition"]
+- ["So8NSObjectC", "transitionDuration"]
+- !private ["So8NSObjectC", "trayHeight"]
+- !private ["So8NSObjectC", "view"]
+- !private ["So8NSObjectC", "window"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "CGAffineTransform"]
+- !private ["So16NSObjectProtocolP", "CGRect"]
+- !private ["So16NSObjectProtocolP", "UIView"]
+- !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
+- !private ["So16NSObjectProtocolP", "addSubview"]
+- !private ["So16NSObjectProtocolP", "animate"]
+- ["So16NSObjectProtocolP", "animateTransition"]
+- ["So16NSObjectProtocolP", "animationEnded"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "completeTransition"]
+- !private ["So16NSObjectProtocolP", "containerView"]
+- !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "frame"]
+- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", "interruptibleAnimator"]
+- ["So16NSObjectProtocolP", "interruptibleAnimatorForTransition"]
+- !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "transform"]
+- !private ["So16NSObjectProtocolP", "transition"]
+- ["So16NSObjectProtocolP", "transitionDuration"]
+- !private ["So16NSObjectProtocolP", "transitionWasCancelled"]
+- !private ["So16NSObjectProtocolP", "trayHeight"]
+- !private ["So16NSObjectProtocolP", "view"]
+- !private ["So16NSObjectProtocolP", "viewController"]
+- !private ["So16NSObjectProtocolP", "window"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["s9OptionSetP", "allowUserInteraction"]
+- !private ["s16RawRepresentableP", "allowUserInteraction"]
+- !private ["s16RawRepresentableP", "from"]
+- !private ["s16RawRepresentableP", "to"]
+- !private ["s10SetAlgebraP", "allowUserInteraction"]
+- !private ["s12StaticStringV", "init"]
+- ["25ImagePickerTrayController09AnimationD0C10TransitionO", "UIPanGestureRecognizer"]
+- ["25ImagePickerTrayController09AnimationD0C10TransitionO", "dismissal"]
+- ["25ImagePickerTrayController09AnimationD0C10TransitionO", "presentation"]
+- !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "animate"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "transform"]
+- !private ["So29UIAccessibilityIdentificationP", "window"]
+- !private ["So12UIAppearanceP", "addGestureRecognizer"]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "animate"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "transform"]
+- !private ["So12UIAppearanceP", "window"]
+- !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "animate"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "transform"]
+- !private ["So21UIAppearanceContainerP", "trayHeight"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "window"]
+- !private ["So26UICollectionViewDataSourceP", "trayHeight"]
+- !private ["So26UICollectionViewDataSourceP", "view"]
+- !private ["So24UICollectionViewDelegateP", "trayHeight"]
+- !private ["So24UICollectionViewDelegateP", "view"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "trayHeight"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "view"]
+- !private ["So18UIContentContainerP", "trayHeight"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So17UICoordinateSpaceP", "addGestureRecognizer"]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "animate"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "transform"]
+- !private ["So17UICoordinateSpaceP", "window"]
+- !private ["So13UIDynamicItemP", "addGestureRecognizer"]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "animate"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "transform"]
+- !private ["So13UIDynamicItemP", "window"]
+- !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "animate"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "transform"]
+- !private ["So18UIFocusEnvironmentP", "trayHeight"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "window"]
+- !private ["So11UIFocusItemP", "addGestureRecognizer"]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "animate"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "transform"]
+- !private ["So11UIFocusItemP", "window"]
+- !private ["So31UIImagePickerControllerDelegateP", "trayHeight"]
+- !private ["So31UIImagePickerControllerDelegateP", "view"]
+- !private ["So30UINavigationControllerDelegateP", "trayHeight"]
+- !private ["So30UINavigationControllerDelegateP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "animate"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "transform"]
+- !private ["So30UIPasteConfigurationSupportingP", "trayHeight"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "window"]
+- !private ["So11UIResponderC", "addGestureRecognizer"]
+- !private ["So11UIResponderC", "addSubview"]
+- !private ["So11UIResponderC", "animate"]
+- !private ["So11UIResponderC", "bounds"]
+- !private ["So11UIResponderC", "frame"]
+- !private ["So11UIResponderC", "transform"]
+- !private ["So11UIResponderC", "trayHeight"]
+- !private ["So11UIResponderC", "view"]
+- !private ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "animate"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "transform"]
+- !private ["So30UIResponderStandardEditActionsP", "trayHeight"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["So20UIScrollViewDelegateP", "trayHeight"]
+- !private ["So20UIScrollViewDelegateP", "view"]
+- !private ["So16UIStateRestoringP", "trayHeight"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "animate"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "transform"]
+- !private ["So18UITraitEnvironmentP", "trayHeight"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "window"]
+- !private ["SC36UITransitionContextViewControllerKeyV", "from"]
+- !private ["SC36UITransitionContextViewControllerKeyV", "to"]
+- !private ["So6UIViewC", "addGestureRecognizer"]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "animate"]
+- !private ["So6UIViewC", "bounds"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "transform"]
+- !private ["So6UIViewC", "window"]
+- !private ["SC22UIViewAnimationOptionsV", "allowUserInteraction"]
+- !private ["So16UIViewControllerC", "trayHeight"]
+- !private ["So16UIViewControllerC", "view"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "CGAffineTransform"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "CGRect"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "UIView"]
+- ["So37UIViewControllerAnimatedTransitioningP", "animateTransition"]
+- ["So37UIViewControllerAnimatedTransitioningP", "animationEnded"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "dismiss"]
+- ["So37UIViewControllerAnimatedTransitioningP", "interruptibleAnimator"]
+- ["So37UIViewControllerAnimatedTransitioningP", "interruptibleAnimatorForTransition"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "present"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "transition"]
+- ["So37UIViewControllerAnimatedTransitioningP", "transitionDuration"]
+- ["So37UIViewControllerAnimatedTransitioningP", ""]
+- !private ["So36UIViewControllerContextTransitioningP", "completeTransition"]
+- !private ["So36UIViewControllerContextTransitioningP", "containerView"]
+- !private ["So36UIViewControllerContextTransitioningP", "transitionWasCancelled"]
+- !private ["So36UIViewControllerContextTransitioningP", "viewController"]
+- !private ["So8UIWindowC", "addGestureRecognizer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "animate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "transform"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "window"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGAffineTransform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "animateTransition"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "animationEnded"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "interruptibleAnimator"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "interruptibleAnimatorForTransition"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "transform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "transition"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "transitionDuration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trayHeight"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "from"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "identity"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "origin"]
+- !private ["s21_ObjectiveCBridgeableP", "to"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+- !private ["s20_SwiftNewtypeWrapperP", "from"]
+- !private ["s20_SwiftNewtypeWrapperP", "to"]
+depends-nominal:
+- "25ImagePickerTrayController09AnimationD0C"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "SC17CGAffineTransformV"
+- !private "SC7CGPointV"
+- !private "SC6CGRectV"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "25ImagePickerTrayControllerAAC"
+- !private "s25LosslessStringConvertibleP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s9OptionSetP"
+- !private "s16RawRepresentableP"
+- !private "s10SetAlgebraP"
+- !private "s12StaticStringV"
+- "25ImagePickerTrayController09AnimationD0C10TransitionO"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So26UICollectionViewDataSourceP"
+- !private "So24UICollectionViewDelegateP"
+- !private "So34UICollectionViewDelegateFlowLayoutP"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So31UIImagePickerControllerDelegateP"
+- !private "So30UINavigationControllerDelegateP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "SC36UITransitionContextViewControllerKeyV"
+- !private "So6UIViewC"
+- !private "SC22UIViewAnimationOptionsV"
+- !private "So16UIViewControllerC"
+- "So37UIViewControllerAnimatedTransitioningP"
+- !private "So36UIViewControllerContextTransitioningP"
+- !private "So8UIWindowC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/ImagePickerTrayController.h"
+- "/Users/kjmacaul/ImagePickerTrayController/build/ImagePickerTrayController.build/Debug-iphonesimulator/ImagePickerTrayController.build/unextended-module.modulemap"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "f7105e4741c12e25e84e6ad5833bf149"
