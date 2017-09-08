@@ -152,7 +152,7 @@ public class ImagePickerTrayController: UIViewController {
         super.loadView()
         
         view.addSubview(collectionView)
-        collectionView.heightAnchor.constraint(equalToConstant: trayHeight).isActive = true
+        collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
@@ -160,7 +160,7 @@ public class ImagePickerTrayController: UIViewController {
         
         let numberOfRows = (UIDevice.current.userInterfaceIdiom == .pad) ? 3 : 2
         let totalItemSpacing = CGFloat(numberOfRows-1)*itemSpacing + collectionView.contentInset.vertical
-        let side = round((self.trayHeight-totalItemSpacing)/CGFloat(numberOfRows))
+        let side = round((collectionView.bounds.size.height-totalItemSpacing)/CGFloat(numberOfRows))
         self.imageSize = CGSize(width: side, height: side)
     }
     
@@ -168,6 +168,15 @@ public class ImagePickerTrayController: UIViewController {
         super.viewWillAppear(animated)
         
         fetchAssets()
+    }
+    
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let numberOfRows = (UIDevice.current.userInterfaceIdiom == .pad) ? 3 : 2
+        let totalItemSpacing = CGFloat(numberOfRows-1)*itemSpacing + collectionView.contentInset.vertical
+        let side = round((collectionView.bounds.size.height-totalItemSpacing)/CGFloat(numberOfRows))
+        self.imageSize = CGSize(width: side, height: side)
     }
     
     // MARK: - Action
@@ -339,7 +348,7 @@ extension ImagePickerTrayController: UICollectionViewDelegateFlowLayout {
         case 0:
             return CGSize(width: actionCellWidth, height: maxItemHeight)
         case 1:
-            return CGSize(width: 150, height: maxItemHeight)
+            return CGSize(width: (UIDevice.current.userInterfaceIdiom == .pad) ? 180 : 150, height: maxItemHeight)
         case 2:
             return imageSize
         default:
