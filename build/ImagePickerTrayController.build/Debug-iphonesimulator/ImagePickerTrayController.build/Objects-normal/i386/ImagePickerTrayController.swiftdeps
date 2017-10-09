@@ -94,8 +94,8 @@ depends-top-level:
 - "UIViewController"
 - !private "animationDuration"
 - !private "fatalError"
+- !private "floor"
 - !private "itemSpacing"
-- !private "round"
 - !private "~="
 depends-member:
 - !private ["25ImagePickerTrayController10ActionCellC", "actions"]
@@ -215,6 +215,7 @@ depends-member:
 - !private ["s7CVarArgP", "fetchLimit"]
 - !private ["s7CVarArgP", "flipCamera"]
 - !private ["s7CVarArgP", "flipCameraButton"]
+- !private ["s7CVarArgP", "floor"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "hashValue"]
 - !private ["s7CVarArgP", "image"]
@@ -257,7 +258,6 @@ depends-member:
 - !private ["s7CVarArgP", "requestOptions"]
 - !private ["s7CVarArgP", "resizeMode"]
 - !private ["s7CVarArgP", "rightAnchor"]
-- !private ["s7CVarArgP", "round"]
 - !private ["s7CVarArgP", "scale"]
 - !private ["s7CVarArgP", "scrollDirection"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
@@ -376,6 +376,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "flatMap"]
 - !private ["s28CustomDebugStringConvertibleP", "flipCamera"]
 - !private ["s28CustomDebugStringConvertibleP", "flipCameraButton"]
+- !private ["s28CustomDebugStringConvertibleP", "floor"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
@@ -419,7 +420,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "requestOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "resizeMode"]
 - !private ["s28CustomDebugStringConvertibleP", "rightAnchor"]
-- !private ["s28CustomDebugStringConvertibleP", "round"]
 - !private ["s28CustomDebugStringConvertibleP", "scale"]
 - !private ["s28CustomDebugStringConvertibleP", "scrollDirection"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -548,6 +548,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "fetchLimit"]
 - !private ["s23CustomStringConvertibleP", "flipCamera"]
 - !private ["s23CustomStringConvertibleP", "flipCameraButton"]
+- !private ["s23CustomStringConvertibleP", "floor"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "image"]
@@ -591,7 +592,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "requestOptions"]
 - !private ["s23CustomStringConvertibleP", "resizeMode"]
 - !private ["s23CustomStringConvertibleP", "rightAnchor"]
-- !private ["s23CustomStringConvertibleP", "round"]
 - !private ["s23CustomStringConvertibleP", "scale"]
 - !private ["s23CustomStringConvertibleP", "scrollDirection"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -726,6 +726,7 @@ depends-member:
 - !private ["s9EquatableP", "fetchLimit"]
 - !private ["s9EquatableP", "flipCamera"]
 - !private ["s9EquatableP", "flipCameraButton"]
+- !private ["s9EquatableP", "floor"]
 - !private ["s9EquatableP", "frame"]
 - !private ["s9EquatableP", "front"]
 - ["s9EquatableP", "hashValue"]
@@ -775,7 +776,6 @@ depends-member:
 - !private ["s9EquatableP", "requestOptions"]
 - !private ["s9EquatableP", "resizeMode"]
 - !private ["s9EquatableP", "rightAnchor"]
-- !private ["s9EquatableP", "round"]
 - !private ["s9EquatableP", "scale"]
 - !private ["s9EquatableP", "scrollDirection"]
 - ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
@@ -909,6 +909,7 @@ depends-member:
 - !private ["s8HashableP", "fetchLimit"]
 - !private ["s8HashableP", "flipCamera"]
 - !private ["s8HashableP", "flipCameraButton"]
+- !private ["s8HashableP", "floor"]
 - !private ["s8HashableP", "frame"]
 - !private ["s8HashableP", "front"]
 - ["s8HashableP", "hashValue"]
@@ -957,7 +958,6 @@ depends-member:
 - !private ["s8HashableP", "requestOptions"]
 - !private ["s8HashableP", "resizeMode"]
 - !private ["s8HashableP", "rightAnchor"]
-- !private ["s8HashableP", "round"]
 - !private ["s8HashableP", "scale"]
 - !private ["s8HashableP", "scrollDirection"]
 - ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1059,6 +1059,7 @@ depends-member:
 - !private ["25ImagePickerTrayControllerAAC", "fatalError"]
 - !private ["25ImagePickerTrayControllerAAC", "fetchAssets"]
 - !private ["25ImagePickerTrayControllerAAC", "flipCamera"]
+- !private ["25ImagePickerTrayControllerAAC", "floor"]
 - !private ["25ImagePickerTrayControllerAAC", "imageManager"]
 - ["25ImagePickerTrayControllerAAC", "imagePickerController"]
 - ["25ImagePickerTrayControllerAAC", "imagePickerControllerDidCancel"]
@@ -1083,7 +1084,6 @@ depends-member:
 - !private ["25ImagePickerTrayControllerAAC", "requestImage"]
 - !private ["25ImagePickerTrayControllerAAC", "requestOptions"]
 - !private ["25ImagePickerTrayControllerAAC", "requestOptions.storage"]
-- !private ["25ImagePickerTrayControllerAAC", "round"]
 - !private ["25ImagePickerTrayControllerAAC", "scale"]
 - ["25ImagePickerTrayControllerAAC", "scrollViewDidChangeAdjustedContentInset"]
 - ["25ImagePickerTrayControllerAAC", "scrollViewDidEndDecelerating"]
@@ -1183,6 +1183,7 @@ depends-member:
 - !private ["So8NSCodingP", "fetchAssets"]
 - !private ["So8NSCodingP", "flipCamera"]
 - !private ["So8NSCodingP", "flipCameraButton"]
+- !private ["So8NSCodingP", "floor"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageManager"]
@@ -1215,7 +1216,6 @@ depends-member:
 - !private ["So8NSCodingP", "requestImage"]
 - !private ["So8NSCodingP", "requestOptions"]
 - !private ["So8NSCodingP", "rightAnchor"]
-- !private ["So8NSCodingP", "round"]
 - !private ["So8NSCodingP", "scale"]
 - !private ["So8NSCodingP", "scrollDirection"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1303,6 +1303,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "fatalError"]
 - !private ["So26NSExtensionRequestHandlingP", "fetchAssets"]
 - !private ["So26NSExtensionRequestHandlingP", "flipCamera"]
+- !private ["So26NSExtensionRequestHandlingP", "floor"]
 - !private ["So26NSExtensionRequestHandlingP", "imageManager"]
 - ["So26NSExtensionRequestHandlingP", "imagePickerController"]
 - ["So26NSExtensionRequestHandlingP", "imagePickerControllerDidCancel"]
@@ -1324,7 +1325,6 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInCollectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "requestImage"]
 - !private ["So26NSExtensionRequestHandlingP", "requestOptions"]
-- !private ["So26NSExtensionRequestHandlingP", "round"]
 - !private ["So26NSExtensionRequestHandlingP", "scale"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
@@ -1438,6 +1438,7 @@ depends-member:
 - !private ["So8NSObjectC", "fetchLimit"]
 - ["So8NSObjectC", "flipCamera"]
 - !private ["So8NSObjectC", "flipCameraButton"]
+- !private ["So8NSObjectC", "floor"]
 - !private ["So8NSObjectC", "frame"]
 - !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "imageManager"]
@@ -1481,7 +1482,6 @@ depends-member:
 - ["So8NSObjectC", "requestOptions.storage"]
 - !private ["So8NSObjectC", "resizeMode"]
 - !private ["So8NSObjectC", "rightAnchor"]
-- !private ["So8NSObjectC", "round"]
 - ["So8NSObjectC", "scale"]
 - !private ["So8NSObjectC", "scrollDirection"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
@@ -1579,6 +1579,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "fetchLimit"]
 - !private ["So16NSObjectProtocolP", "flipCamera"]
 - !private ["So16NSObjectProtocolP", "flipCameraButton"]
+- !private ["So16NSObjectProtocolP", "floor"]
 - !private ["So16NSObjectProtocolP", "frame"]
 - !private ["So16NSObjectProtocolP", "image"]
 - !private ["So16NSObjectProtocolP", "imageManager"]
@@ -1619,7 +1620,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "requestOptions"]
 - !private ["So16NSObjectProtocolP", "resizeMode"]
 - !private ["So16NSObjectProtocolP", "rightAnchor"]
-- !private ["So16NSObjectProtocolP", "round"]
 - !private ["So16NSObjectProtocolP", "scale"]
 - !private ["So16NSObjectProtocolP", "scrollDirection"]
 - ["So16NSObjectProtocolP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1871,6 +1871,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "fetchAssets"]
 - !private ["So21UIAppearanceContainerP", "flipCamera"]
 - !private ["So21UIAppearanceContainerP", "flipCameraButton"]
+- !private ["So21UIAppearanceContainerP", "floor"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "image"]
 - !private ["So21UIAppearanceContainerP", "imageManager"]
@@ -1901,7 +1902,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "requestImage"]
 - !private ["So21UIAppearanceContainerP", "requestOptions"]
 - !private ["So21UIAppearanceContainerP", "rightAnchor"]
-- !private ["So21UIAppearanceContainerP", "round"]
 - !private ["So21UIAppearanceContainerP", "scale"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
@@ -2006,6 +2006,7 @@ depends-member:
 - !private ["So26UICollectionViewDataSourceP", "fatalError"]
 - !private ["So26UICollectionViewDataSourceP", "fetchAssets"]
 - !private ["So26UICollectionViewDataSourceP", "flipCamera"]
+- !private ["So26UICollectionViewDataSourceP", "floor"]
 - !private ["So26UICollectionViewDataSourceP", "imageManager"]
 - ["So26UICollectionViewDataSourceP", "imagePickerController"]
 - ["So26UICollectionViewDataSourceP", "imagePickerControllerDidCancel"]
@@ -2024,7 +2025,6 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "numberOfSectionsInCollectionView"]
 - !private ["So26UICollectionViewDataSourceP", "requestImage"]
 - !private ["So26UICollectionViewDataSourceP", "requestOptions"]
-- !private ["So26UICollectionViewDataSourceP", "round"]
 - !private ["So26UICollectionViewDataSourceP", "scale"]
 - ["So26UICollectionViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26UICollectionViewDataSourceP", "scrollViewDidEndDecelerating"]
@@ -2086,6 +2086,7 @@ depends-member:
 - !private ["So24UICollectionViewDelegateP", "fatalError"]
 - !private ["So24UICollectionViewDelegateP", "fetchAssets"]
 - !private ["So24UICollectionViewDelegateP", "flipCamera"]
+- !private ["So24UICollectionViewDelegateP", "floor"]
 - !private ["So24UICollectionViewDelegateP", "imageManager"]
 - ["So24UICollectionViewDelegateP", "imagePickerController"]
 - ["So24UICollectionViewDelegateP", "imagePickerControllerDidCancel"]
@@ -2104,7 +2105,6 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "numberOfSectionsInCollectionView"]
 - !private ["So24UICollectionViewDelegateP", "requestImage"]
 - !private ["So24UICollectionViewDelegateP", "requestOptions"]
-- !private ["So24UICollectionViewDelegateP", "round"]
 - !private ["So24UICollectionViewDelegateP", "scale"]
 - ["So24UICollectionViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So24UICollectionViewDelegateP", "scrollViewDidEndDecelerating"]
@@ -2166,6 +2166,7 @@ depends-member:
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "fatalError"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "fetchAssets"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "flipCamera"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "floor"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "imageManager"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "imagePickerController"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "imagePickerControllerDidCancel"]
@@ -2184,7 +2185,6 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "numberOfSectionsInCollectionView"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "requestImage"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "requestOptions"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "round"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "scale"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewDidEndDecelerating"]
@@ -2261,6 +2261,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "fatalError"]
 - !private ["So18UIContentContainerP", "fetchAssets"]
 - !private ["So18UIContentContainerP", "flipCamera"]
+- !private ["So18UIContentContainerP", "floor"]
 - !private ["So18UIContentContainerP", "imageManager"]
 - ["So18UIContentContainerP", "imagePickerController"]
 - ["So18UIContentContainerP", "imagePickerControllerDidCancel"]
@@ -2282,7 +2283,6 @@ depends-member:
 - ["So18UIContentContainerP", "numberOfSectionsInCollectionView"]
 - !private ["So18UIContentContainerP", "requestImage"]
 - !private ["So18UIContentContainerP", "requestOptions"]
-- !private ["So18UIContentContainerP", "round"]
 - !private ["So18UIContentContainerP", "scale"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
@@ -2452,6 +2452,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "fetchAssets"]
 - !private ["So18UIFocusEnvironmentP", "flipCamera"]
 - !private ["So18UIFocusEnvironmentP", "flipCameraButton"]
+- !private ["So18UIFocusEnvironmentP", "floor"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "image"]
 - !private ["So18UIFocusEnvironmentP", "imageManager"]
@@ -2482,7 +2483,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "requestImage"]
 - !private ["So18UIFocusEnvironmentP", "requestOptions"]
 - !private ["So18UIFocusEnvironmentP", "rightAnchor"]
-- !private ["So18UIFocusEnvironmentP", "round"]
 - !private ["So18UIFocusEnvironmentP", "scale"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
@@ -2599,6 +2599,7 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "fatalError"]
 - !private ["So31UIImagePickerControllerDelegateP", "fetchAssets"]
 - !private ["So31UIImagePickerControllerDelegateP", "flipCamera"]
+- !private ["So31UIImagePickerControllerDelegateP", "floor"]
 - !private ["So31UIImagePickerControllerDelegateP", "imageManager"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerController"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerControllerDidCancel"]
@@ -2617,7 +2618,6 @@ depends-member:
 - ["So31UIImagePickerControllerDelegateP", "numberOfSectionsInCollectionView"]
 - !private ["So31UIImagePickerControllerDelegateP", "requestImage"]
 - !private ["So31UIImagePickerControllerDelegateP", "requestOptions"]
-- !private ["So31UIImagePickerControllerDelegateP", "round"]
 - !private ["So31UIImagePickerControllerDelegateP", "scale"]
 - ["So31UIImagePickerControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So31UIImagePickerControllerDelegateP", "scrollViewDidEndDecelerating"]
@@ -2694,6 +2694,7 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "fatalError"]
 - !private ["So30UINavigationControllerDelegateP", "fetchAssets"]
 - !private ["So30UINavigationControllerDelegateP", "flipCamera"]
+- !private ["So30UINavigationControllerDelegateP", "floor"]
 - !private ["So30UINavigationControllerDelegateP", "imageManager"]
 - ["So30UINavigationControllerDelegateP", "imagePickerController"]
 - ["So30UINavigationControllerDelegateP", "imagePickerControllerDidCancel"]
@@ -2712,7 +2713,6 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", "numberOfSectionsInCollectionView"]
 - !private ["So30UINavigationControllerDelegateP", "requestImage"]
 - !private ["So30UINavigationControllerDelegateP", "requestOptions"]
-- !private ["So30UINavigationControllerDelegateP", "round"]
 - !private ["So30UINavigationControllerDelegateP", "scale"]
 - ["So30UINavigationControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UINavigationControllerDelegateP", "scrollViewDidEndDecelerating"]
@@ -2790,6 +2790,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "fetchAssets"]
 - !private ["So30UIPasteConfigurationSupportingP", "flipCamera"]
 - !private ["So30UIPasteConfigurationSupportingP", "flipCameraButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "floor"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageManager"]
@@ -2820,7 +2821,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "requestImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "requestOptions"]
 - !private ["So30UIPasteConfigurationSupportingP", "rightAnchor"]
-- !private ["So30UIPasteConfigurationSupportingP", "round"]
 - !private ["So30UIPasteConfigurationSupportingP", "scale"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
@@ -2921,6 +2921,7 @@ depends-member:
 - ["So11UIResponderC", "fetchAssets"]
 - ["So11UIResponderC", "flipCamera"]
 - !private ["So11UIResponderC", "flipCameraButton"]
+- !private ["So11UIResponderC", "floor"]
 - !private ["So11UIResponderC", "frame"]
 - !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "imageManager"]
@@ -2955,7 +2956,6 @@ depends-member:
 - ["So11UIResponderC", "requestOptions"]
 - ["So11UIResponderC", "requestOptions.storage"]
 - !private ["So11UIResponderC", "rightAnchor"]
-- !private ["So11UIResponderC", "round"]
 - ["So11UIResponderC", "scale"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So11UIResponderC", "scrollViewDidEndDecelerating"]
@@ -3041,6 +3041,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "fetchAssets"]
 - !private ["So30UIResponderStandardEditActionsP", "flipCamera"]
 - !private ["So30UIResponderStandardEditActionsP", "flipCameraButton"]
+- !private ["So30UIResponderStandardEditActionsP", "floor"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
 - !private ["So30UIResponderStandardEditActionsP", "imageManager"]
@@ -3071,7 +3072,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "requestImage"]
 - !private ["So30UIResponderStandardEditActionsP", "requestOptions"]
 - !private ["So30UIResponderStandardEditActionsP", "rightAnchor"]
-- !private ["So30UIResponderStandardEditActionsP", "round"]
 - !private ["So30UIResponderStandardEditActionsP", "scale"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
@@ -3163,6 +3163,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "fatalError"]
 - !private ["So20UIScrollViewDelegateP", "fetchAssets"]
 - !private ["So20UIScrollViewDelegateP", "flipCamera"]
+- !private ["So20UIScrollViewDelegateP", "floor"]
 - !private ["So20UIScrollViewDelegateP", "imageManager"]
 - ["So20UIScrollViewDelegateP", "imagePickerController"]
 - ["So20UIScrollViewDelegateP", "imagePickerControllerDidCancel"]
@@ -3181,7 +3182,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInCollectionView"]
 - !private ["So20UIScrollViewDelegateP", "requestImage"]
 - !private ["So20UIScrollViewDelegateP", "requestOptions"]
-- !private ["So20UIScrollViewDelegateP", "round"]
 - !private ["So20UIScrollViewDelegateP", "scale"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
@@ -3269,6 +3269,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "fatalError"]
 - !private ["So16UIStateRestoringP", "fetchAssets"]
 - !private ["So16UIStateRestoringP", "flipCamera"]
+- !private ["So16UIStateRestoringP", "floor"]
 - !private ["So16UIStateRestoringP", "imageManager"]
 - ["So16UIStateRestoringP", "imagePickerController"]
 - ["So16UIStateRestoringP", "imagePickerControllerDidCancel"]
@@ -3290,7 +3291,6 @@ depends-member:
 - ["So16UIStateRestoringP", "numberOfSectionsInCollectionView"]
 - !private ["So16UIStateRestoringP", "requestImage"]
 - !private ["So16UIStateRestoringP", "requestOptions"]
-- !private ["So16UIStateRestoringP", "round"]
 - !private ["So16UIStateRestoringP", "scale"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
@@ -3372,6 +3372,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "fetchAssets"]
 - !private ["So18UITraitEnvironmentP", "flipCamera"]
 - !private ["So18UITraitEnvironmentP", "flipCameraButton"]
+- !private ["So18UITraitEnvironmentP", "floor"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "imageManager"]
@@ -3403,7 +3404,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "requestImage"]
 - !private ["So18UITraitEnvironmentP", "requestOptions"]
 - !private ["So18UITraitEnvironmentP", "rightAnchor"]
-- !private ["So18UITraitEnvironmentP", "round"]
 - !private ["So18UITraitEnvironmentP", "scale"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
@@ -3523,6 +3523,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "fatalError"]
 - ["So16UIViewControllerC", "fetchAssets"]
 - ["So16UIViewControllerC", "flipCamera"]
+- !private ["So16UIViewControllerC", "floor"]
 - ["So16UIViewControllerC", "imageManager"]
 - ["So16UIViewControllerC", "imagePickerController"]
 - ["So16UIViewControllerC", "imagePickerControllerDidCancel"]
@@ -3548,7 +3549,6 @@ depends-member:
 - ["So16UIViewControllerC", "requestImage"]
 - ["So16UIViewControllerC", "requestOptions"]
 - ["So16UIViewControllerC", "requestOptions.storage"]
-- !private ["So16UIViewControllerC", "round"]
 - ["So16UIViewControllerC", "scale"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
@@ -3714,6 +3714,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchLimit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "flipCamera"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "flipCameraButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "floor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageManager"]
@@ -3754,7 +3755,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "requestOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resizeMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightAnchor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "round"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scale"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollDirection"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -4004,25 +4004,25 @@ depends-nominal:
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreMedia.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/simd.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Metal.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/AVFoundation.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreFoundation.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreAudio.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Photos.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
-- "/Users/kjmacaul/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
 - "/Users/kjmacaul/ImagePickerTrayController/ImagePickerTrayController/ImagePickerTrayController.h"
 - "/Users/kjmacaul/ImagePickerTrayController/build/ImagePickerTrayController.build/Debug-iphonesimulator/ImagePickerTrayController.build/unextended-module.modulemap"
 interface-hash: "4804d3015f6e627d6ec0bf56949ee3c0"

@@ -160,7 +160,7 @@ public class ImagePickerTrayController: UIViewController {
         
         let numberOfRows = (UIDevice.current.userInterfaceIdiom == .pad) ? 3 : 2
         let totalItemSpacing = CGFloat(numberOfRows-1)*itemSpacing + collectionView.contentInset.vertical
-        let side = round((collectionView.bounds.size.height-totalItemSpacing)/CGFloat(numberOfRows))
+        let side = floor((collectionView.bounds.size.height-totalItemSpacing)/CGFloat(numberOfRows))
         self.imageSize = CGSize(width: side, height: side)
     }
     
@@ -175,7 +175,7 @@ public class ImagePickerTrayController: UIViewController {
         
         let numberOfRows = (UIDevice.current.userInterfaceIdiom == .pad) ? 3 : 2
         let totalItemSpacing = CGFloat(numberOfRows-1)*itemSpacing + collectionView.contentInset.vertical
-        let side = round((collectionView.bounds.size.height-totalItemSpacing)/CGFloat(numberOfRows))
+        let side = floor((collectionView.bounds.size.height-totalItemSpacing)/CGFloat(numberOfRows))
         self.imageSize = CGSize(width: side, height: side)
     }
     
