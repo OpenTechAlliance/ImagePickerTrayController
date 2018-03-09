@@ -93,16 +93,16 @@ fileprivate class ActionButton: UIButton {
         addConstraint(NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 45))
         
         setTitle(action.title, for: .normal)
-        setTitleColor(UIColor(red: 46/255.0, green: 103/255.0, blue: 177/255.0, alpha: 1.0), for: .normal)
+        setTitleColor(action.tintColor, for: .normal)
         setImage(action.image, for: .normal)
         
-        imageView?.tintColor = .lightGray
+        imageView?.tintColor = action.tintColor
         imageView?.contentMode = .scaleAspectFit
         
         titleLabel?.textAlignment = .center
         titleLabel?.font = .systemFont(ofSize: 13)
         
-        backgroundColor = .white
+        backgroundColor = .clear
         addTarget(target, action: selector, for: .touchUpInside)
         
         alignVertical(spacing: 2)
