@@ -40,6 +40,7 @@
 		4970E5961DB0E0550078ED23 /* ImagePickerTrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970E5951DB0E0550078ED23 /* ImagePickerTrayController.swift */; };
 		49A9DB6C1EA4B84B008DD8FB /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9DB6B1EA4B84B008DD8FB /* TransitionController.swift */; };
 		49FC9BD11DEB472900AC1AA8 /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC9BD01DEB472900AC1AA8 /* UIEdgeInsetsExtensions.swift */; };
+		6698EEEC2059939000FE0B00 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698EEEB2059939000FE0B00 /* UIImage+Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		4970E5951DB0E0550078ED23 /* ImagePickerTrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerTrayController.swift; sourceTree = "<group>"; };
 		49A9DB6B1EA4B84B008DD8FB /* TransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
 		49FC9BD01DEB472900AC1AA8 /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
+		6698EEEB2059939000FE0B00 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				492715F91DE7835200A9DD5B /* UIImageExtensions.swift */,
 				49FC9BD01DEB472900AC1AA8 /* UIEdgeInsetsExtensions.swift */,
+				6698EEEB2059939000FE0B00 /* UIImage+Gif.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -287,7 +290,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Laurin Brandner";
 				TargetAttributes = {
 					4970E5201DB0DD400078ED23 = {
@@ -415,6 +418,7 @@
 				4958FF381DEA33F7000E1201 /* CameraOverlayView.swift in Sources */,
 				4909255A1DE4E600001027EC /* ActionCell.swift in Sources */,
 				492715FA1DE7835200A9DD5B /* UIImageExtensions.swift in Sources */,
+				6698EEEC2059939000FE0B00 /* UIImage+Gif.swift in Sources */,
 				491D5EB41DE451CD007EC01A /* ImagePickerAction.swift in Sources */,
 				49A9DB6C1EA4B84B008DD8FB /* TransitionController.swift in Sources */,
 				4970E5961DB0E0550078ED23 /* ImagePickerTrayController.swift in Sources */,
@@ -613,7 +617,6 @@
 		4970E5921DB0E0410078ED23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -641,7 +644,6 @@
 		4970E5931DB0E0410078ED23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;

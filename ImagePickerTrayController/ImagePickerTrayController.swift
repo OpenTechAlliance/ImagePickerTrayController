@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import MobileCoreServices
 
 fileprivate let itemSpacing: CGFloat = 0
 
@@ -202,7 +203,7 @@ public class ImagePickerTrayController: UIViewController {
         })
     }
     
-    fileprivate func requestImage(for asset: PHAsset, completion: @escaping (_ image: UIImage?) -> ()) {
+    fileprivate func requestImage(for asset: PHAsset, completion: @escaping (_ image: UIImage?, _ data: Data?, _ isGif: Bool) -> ()) {
         requestOptions.isSynchronous = true
         let size = scale(imageSize: imageSize)
         
@@ -210,12 +211,35 @@ public class ImagePickerTrayController: UIViewController {
         if asset.representsBurst {
             imageManager.requestImageData(for: asset, options: requestOptions) { data, _, _, _ in
                 let image = data.flatMap { UIImage(data: $0) }
-                completion(image)
+                var isGIF = false
+                
+                if let identifier = asset.value(forKey: "uniformTypeIdentifier") as? String {
+                    if identifier == kUTTypeGIF as String {
+                        isGIF = true
+                    }
+                }
+                
+                completion(image, nil, isGIF)
             }
         }
         else {
-            imageManager.requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: requestOptions) { image, _ in
-                completion(image)
+            imageManager.requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: requestOptions) { [weak self] image, _ in
+                guard let bself = self else { return }
+                var isGIF = false
+                
+                if let identifier = asset.value(forKey: "uniformTypeIdentifier") as? String {
+                    if identifier == kUTTypeGIF as String {
+                        isGIF = true
+                    }
+                }
+                
+                if isGIF {
+                    self?.imageManager.requestImageData(for: asset, options: bself.requestOptions) { data, _, _, _ in
+                        completion(image, data, isGIF)
+                    }
+                } else {
+                    completion(image, nil, isGIF)
+                }
             }
         }
     }
@@ -285,7 +309,14 @@ extension ImagePickerTrayController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(ImageCell.self), for: indexPath) as! ImageCell
             cell.isVideo = (asset.mediaType == .video)
             cell.isRemote = (asset.sourceType != .typeUserLibrary)
-            requestImage(for: asset) { cell.imageView.image = $0 }
+            requestImage(for: asset) {image, data, isGif in
+                if isGif {
+                    guard let data = data else { return }
+                    cell.imageView.image = UIImage.gif(data: data)
+                } else {
+                    cell.imageView.image = image
+                }
+            }
             
             return cell
         default:
