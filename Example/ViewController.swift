@@ -88,7 +88,7 @@ class ViewController: UIViewController {
         }
         
         let duration: TimeInterval = (userInfo[ImagePickerTrayAnimationDurationUserInfoKey] as? TimeInterval) ?? 0
-        animateContentInset(inset: frame.height, duration: duration, curve: UIViewAnimationCurve(rawValue: 0)!)
+        animateContentInset(inset: frame.height, duration: duration, curve: UIView.AnimationCurve(rawValue: 0)!)
     }
     
     @objc fileprivate func willHideImagePickerTray(notification: Notification) {
@@ -97,17 +97,17 @@ class ViewController: UIViewController {
         }
         
         let duration: TimeInterval = (userInfo[ImagePickerTrayAnimationDurationUserInfoKey] as? TimeInterval) ?? 0
-        animateContentInset(inset: 0, duration: duration, curve: UIViewAnimationCurve(rawValue: 0)!)
+        animateContentInset(inset: 0, duration: duration, curve: UIView.AnimationCurve(rawValue: 0)!)
     }
     
-    fileprivate func animateContentInset(inset bottomInset: CGFloat, duration: TimeInterval, curve: UIViewAnimationCurve) {
+    fileprivate func animateContentInset(inset bottomInset: CGFloat, duration: TimeInterval, curve: UIView.AnimationCurve) {
         var inset = tableView.contentInset
         inset.bottom = bottomInset
         
         var offset = tableView.contentOffset
         offset.y = max(0, offset.y - bottomInset)
         
-        let options = UIViewAnimationOptions(rawValue: UInt(curve.rawValue) << 16)
+        let options = UIView.AnimationOptions(rawValue: UInt(curve.rawValue) << 16)
         UIView.animate(withDuration: duration, delay: 0, options: options, animations: {
             self.tableView.contentInset = inset
             self.tableView.contentOffset = offset
